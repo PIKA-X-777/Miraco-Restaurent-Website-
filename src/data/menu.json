@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": "starters",
+      "name": "Appetizers & Starters",
+      "description": "Crisp, spiced small plates to begin your feast."
+    },
+    {
+      "id": "tandoor",
+      "name": "Tandoor & Tikka",
+      "description": "Charred to smoky perfection in our traditional clay oven."
+    },
+    {
+      "id": "mains",
+      "name": "North Indian Mains",
+      "description": "Rich gravies, slow-cooked lentils, and time-honored curries."
+    },
+    {
+      "id": "pizzas",
+      "name": "Wood-Fired Pizzas & Fusion",
+      "description": "Hand-stretched crusts with robust toppings and desi twists."
+    },
+    {
+      "id": "breads",
+      "name": "Breads & Rice",
+      "description": "Freshly baked tandoori rotis, butter naans, and fragrant biryanis."
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts & Beverages",
+      "description": "Sweet finales and refreshing artisanal drinks."
+    }
+  ],
+  "items": [
+    {
+      "id": "item-1",
+      "categoryId": "starters",
+      "name": "Miraco Signature Masala Papad",
+      "price": 245,
+      "isVeg": true,
+      "isVegan": true,
+      "description": "Crispy roasted papad topped with finely diced garden tomatoes, onions, fresh cilantro, tangy spices, and edible flowers.",
+      "image": "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80",
+      "badge": "Chef's Special",
+      "spiciness": 1
+    },
+    {
+      "id": "item-2",
+      "categoryId": "starters",
+      "name": "Delhi 6 Dahi Bhalla Chaat",
+      "price": 295,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Soft lentil dumplings soaked in sweet creamy curd, drizzled with tangy tamarind chutney and roasted cumin.",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+      "badge": "Popular",
+      "spiciness": 1
+    },
+    {
+      "id": "item-3",
+      "categoryId": "tandoor",
+      "name": "Paschim Vihar Paneer Tikka",
+      "price": 445,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Cubes of fresh cottage cheese marinated in hung curd and aromatic Kashmiri chillies, charred in the tandoor.",
+      "image": "https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?auto=format&fit=crop&w=800&q=80",
+      "badge": "Bestseller",
+      "spiciness": 2
+    },
+    {
+      "id": "item-4",
+      "categoryId": "tandoor",
+      "name": "Afghani Malai Soya Chaap",
+      "price": 425,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Juicy soy chunks marinated in rich cream, cashew paste, and mild white spices, grilled over charcoal.",
+      "image": "https://images.unsplash.com/photo-1599487488170-d3319c522263?auto=format&fit=crop&w=800&q=80",
+      "badge": "Must Try",
+      "spiciness": 1
+    },
+    {
+      "id": "item-5",
+      "categoryId": "mains",
+      "name": "Miraco Special Paneer Lababdar",
+      "price": 495,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Cottage cheese cubes cooked in a rich, velvety tomato-onion gravy infused with butter and grated khoya.",
+      "image": "https://images.unsplash.com/photo-1588166524941-3bf61a9c41db?auto=format&fit=crop&w=800&q=80",
+      "badge": "Top Rated",
+      "spiciness": 1
+    },
+    {
+      "id": "item-6",
+      "categoryId": "mains",
+      "name": "Dal Makhani 24-Hour Slow Cooked",
+      "price": 465,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Whole black lentils and kidney beans simmered overnight over slow charcoal embers with rich butter and cream.",
+      "image": "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+      "badge": "All-You-Can-Eat Favorite",
+      "spiciness": 1
+    },
+    {
+      "id": "item-7",
+      "categoryId": "mains",
+      "name": "Shahi Malai Kofta",
+      "price": 475,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Deep-fried cottage cheese and potato dumplings stuffed with dry fruits, served in a rich cashew gravy.",
+      "image": "https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80",
+      "spiciness": 1
+    },
+    {
+      "id": "item-8",
+      "categoryId": "pizzas",
+      "name": "Golden Corn & Herb Pizza",
+      "price": 475,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Hand-stretched crust topped with sweet golden corn kernels, cherry tomatoes, mozzarella cheese, and Italian herbs.",
+      "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+      "badge": "Kids Favorite",
+      "spiciness": 0
+    },
+    {
+      "id": "item-9",
+      "categoryId": "pizzas",
+      "name": "Tandoori Paneer Tikka Pizza",
+      "price": 545,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Wood-fired crust layered with makhani sauce, spiced paneer chunks, bell peppers, and onion rings.",
+      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80",
+      "badge": "Fusion Hit",
+      "spiciness": 2
+    },
+    {
+      "id": "item-10",
+      "categoryId": "breads",
+      "name": "Butter Naan / Garlic Naan",
+      "price": 95,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Leavened flatbread baked in the tandoor, brushed generously with churned butter or minced garlic.",
+      "image": "https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80",
+      "spiciness": 0
+    },
+    {
+      "id": "item-11",
+      "categoryId": "breads",
+      "name": "Lucknowi Dum Veg Biryani",
+      "price": 425,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Basmati rice and garden vegetables cooked in a sealed pot with saffron, kewra water, and whole royal spices.",
+      "image": "https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80",
+      "badge": "Chef's Choice",
+      "spiciness": 2
+    },
+    {
+      "id": "item-12",
+      "categoryId": "desserts",
+      "name": "Gulab Jamun with Rabri",
+      "price": 275,
+      "isVeg": true,
+      "isVegan": false,
+      "description": "Deep-fried khoya milk dumplings soaked in rose cardamom syrup, served warm with chilled sweet rabri.",
+      "image": "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80",
+      "badge": "Must Try",
+      "spiciness": 0
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile containing identity and contact information for Miraco",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Authentication User ID"
+        },
+        "name": {
+          "type": "string",
+          "description": "Full name of the guest",
+          "minLength": 2,
+          "maxLength": 80
+        },
+        "phone": {
+          "type": "string",
+          "description": "10-digit mobile number formatted with country code",
+          "maxLength": 20
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the user",
+          "maxLength": 100
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "ISO timestamp of account creation"
+        }
+      },
+      "required": ["uid", "name"]
+    },
+    "Reservation": {
+      "title": "Reservation",
+      "description": "Table reservation request at Miraco Paschim Vihar",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique reservation booking ID"
+        },
+        "userId": {
+          "type": "string",
+          "description": "UID of the reserving guest"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the reservation contact"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Contact phone number"
+        },
+        "date": {
+          "type": "string",
+          "description": "Reservation date"
+        },
+        "time": {
+          "type": "string",
+          "description": "Reservation time slot"
+        },
+        "guests": {
+          "type": "string",
+          "description": "Party size"
+        },
+        "occasion": {
+          "type": "string",
+          "description": "Dining occasion"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["Pending", "Confirmed", "Cancelled"]
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp when booking was created"
+        }
+      },
+      "required": ["name", "phone", "date", "time", "guests"]
+    },
+    "Review": {
+      "title": "Review",
+      "description": "Guest dining review for Miraco Restaurant",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Review ID"
+        },
+        "author_name": {
+          "type": "string",
+          "description": "Reviewer name"
+        },
+        "rating": {
+          "type": "number",
+          "description": "Star rating 1-5"
+        },
+        "text": {
+          "type": "string",
+          "description": "Review text"
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Review timestamp"
+        }
+      },
+      "required": ["author_name", "rating", "text"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "User profiles restricted to owner and admin"
+    },
+    "/reservations/{reservationId}": {
+      "schema": {
+        "$ref": "#/entities/Reservation"
+      },
+      "description": "Table reservation bookings"
+    },
+    "/reviews/{reviewId}": {
+      "schema": {
+        "$ref": "#/entities/Review"
+      },
+      "description": "Public guest reviews"
+    }
+  }
+}
